@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+    <style>
+        body {
+            background-color: #FAFAFA;
+            padding-top: 150px;
+            font-family: 'STIX Two Math', serif;
+          
+        }
+        h1,h2,h3,h4,h5,h6{
+            font-family: 'Ralway',sans-serif;
+        }
+        a,p{
+            color: #4b5156;
+        }
+        .container{
+            max-width: 580px;
+            margin: auto;
+            background-color: #ffff;
+            box-shadow: -3px 4px 13px 1px rgb(0 0 0 / 21%)
+        }
+        .header-bar{
+            display: flex;
+            justify-content: space-between;
+            color: #ffff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(207deg, #678bdce0 0%, #6a77b3d1 24%, #e25f54e0 100%);;
+        }
+        .header-bar a{
+            color: black;
+            text-decoration: none;
+
+        }
+        .task-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid rgb(226, 226,226);
+        }
+        .task-title{
+            display: flex;
+        }
+        .task-title a{
+            text-decoration: none;
+            color: #4b5156;
+            margin-left: 10px;
+        }
+        .task-complete-icon{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(105, 192,105);
+            border-radius: 50%;
+        }
+        .task-incomplete-icon{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(218, 218,218);
+            border-radius: 50%;
+        }
+        .delete-link{
+            color: red;
+        }
+        #search-add-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        #add-link{
+            color: #000;
+            font-size: 42px;
+        }
+        input[type=text],
+        input[type=password],
+        textarea{
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 9px;
+            padding: 10px;
+            width: 90%;
+        }
+        label{
+            padding-top: 10px !important;
+            display: block;
+        }
+        .button{
+            border: 1px solid #d77675;
+            border-radius: 11px;
+            background-color: #FAFAFA;
+            color: #EB796F;
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration:none;
+            margin-left: 4px;
+        }
+        .size , .back{
+            font-size:20px;
+        }
+        .card-body{
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+
+</html>
